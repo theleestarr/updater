@@ -1,13 +1,13 @@
-!/bin/bash
+#!/bin/bash
 
 clear
-echo -en '\n'
-echo -en '\n'
-echo -en '\n'
-echo -en '\n'
-echo -en '\n'
-echo -en '\n'
-echo -en '\n'
+echo ' '
+echo ' '
+echo ' '
+echo ' '
+echo ' '
+echo ' '
+echo ' ' 
 cat << EOF
 :::    ::: :::::::::  :::::::::      ::: ::::::::::: :::::::::: :::::::::
 :+:    :+: :+:    :+: :+:    :+:   :+: :+:   :+:     :+:        :+:    :+:
@@ -17,15 +17,15 @@ cat << EOF
 #+#    #+# #+#        #+#    #+# #+#     #+# #+#     #+#        #+#    #+#
  ########  ###        #########  ###     ### ###     ########## ###    ###
 EOF
-echo -en '\n'
-echo -en '\n'
-echo -en '\n'
+echo ' '
+echo ' '
+echo ' '
 echo "Ready, Set, GO!"
-echo -en '\n'
-echo -en '\n'
-echo -en '\n'
+echo ' '
+echo ' '
+echo ' '
 #UPDATE ALL THE THINGS!
-apt-get update; apt-get upgrade; apt-get dist-upgrade
-echo -en '\n'
-echo -en '\n'
+apt-get update&& apt-get -y upgrade&& apt-get -y dist-upgrade
+echo ' '
+echo ' '
 echo "Update Complete"
