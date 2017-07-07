@@ -25,7 +25,7 @@ echo ' '
 echo ' '
 echo ' '
 #UPDATE ALL THE THINGS!
-apt-get update&& apt-get -y upgrade&& apt-get -y dist-upgrade
+apt-get update&& apt-get -y upgrade&& apt-get -y dist-upgrade&& apt autoremove -y
 echo ' '
 echo ' '
 echo "Update Complete"
