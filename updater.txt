@@ -25,7 +25,8 @@ echo ' '
 echo ' '
 echo ' '
 #UPDATE ALL THE THINGS!
-apt-get update&& apt-get -y upgrade&& apt-get -y dist-upgrade&& apt autoremove -y
+#Runs update, upgrade, dist-upgrade, autremove. Outputs the process to the updater directory.
+apt-get update&& apt-get -y upgrade&& apt-get -y dist-upgrade&& apt autoremove -y | tee -a /home/starfury000/updater/"$(date +"%Y_%m_%d_%I_%M_%p").log"
 echo ' '
 echo ' '
 echo "Update Complete"
