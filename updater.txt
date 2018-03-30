@@ -30,3 +30,6 @@ apt-get update&& apt-get -y upgrade&& apt-get -y dist-upgrade&& apt autoremove -
 echo ' '
 echo ' '
 echo "Update Complete"
+#Add this cronjob
+#This will run the updater script. update, upgrade, dist-upgrade - at midnight every night.
+#0 0 * * * /bin/bash /home/starfury000/updater/updater.txt
